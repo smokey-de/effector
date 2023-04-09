@@ -27,7 +27,7 @@ const App = () => {
   return (
     <div>
       {user ? <div>current user: {user}</div> : <div>no current user</div>}
-      <button disable={pending} onClick={() => fetchEvent(url)}>
+      <button disabled={pending} onClick={() => fetchEvent(url)}>
       	load user
       </button>
     </div>
